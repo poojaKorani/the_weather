@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=bcb3006c6a9872da69b843108bc3b0c1'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=bcb3006c6a9872da69b843108bc3b0c1' #Use metric to get the temp in celcius
 
     cities = City.objects.all()
 
